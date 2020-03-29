@@ -21,6 +21,18 @@ This project is intended for *computer literate* people, preferably with C# prog
 
 I have prepared some [ffmpeg sample configurations](https://github.com/bp2008/HdmiExtender/wiki/ffmpeg-sample-configurations) to demonstrate some of the ways to consume the video and audio streams produced by HdmiExtender.
 
+## How to run
+
+1. Download and install WinPCap from [https://www.winpcap.org/](https://www.winpcap.org/)
+2. Download and install Visual Studio 2013 or higher
+3. Open this project in Visual Studio 2013 or higher
+4. Compile the source
+5. Open CMD or Powershell
+6. Navigate to the compile directory "debug" or "release"
+7. You are able to run the compiled code in two ways:
+	1. As a service by installing the application in the Windows service list. You do this by running the following command: "C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe" ".\HdmiExtenderService.exe"
+	2. As just an application by running the following command: .\HdmiExtenderService.exe cmd <static IP of networkadapter> <IP of HMDI sender> <port local webserver>
+	
 ## Other thoughts
 
 This project is currently very unpolished.  I have not built a binary distribution because the network settings are hard-coded.  You will need to download the source code, open it in Visual Studio (2013 community edition is what I recommend), and modify the network settings before building.
