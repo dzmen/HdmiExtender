@@ -22,8 +22,8 @@ namespace HdmiExtenderService
 
 		protected override void OnStart(string[] args)
 		{
-			server = new VideoWebServer(18080, -1, "192.168.168.55", 1);
-			server.Start();
+            server = new VideoWebServer(18080, -1, "192.168.168.55", "192.168.168");
+            server.Start();
 		}
 
 		protected override void OnStop()

@@ -37,7 +37,7 @@ namespace HdmiExtenderLib
 			timer.Tick += timer_Tick;
 			timer.Start();
 
-			receiver = new HdmiExtenderReceiver("192.168.168.55", 1);
+			receiver = new HdmiExtenderReceiver("192.168.168.55", "192.168.168");
 			receiver.Start();
 		}
 
